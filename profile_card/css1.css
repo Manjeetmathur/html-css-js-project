@@ -1,0 +1,163 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+.profile-card
+{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background:#fff;
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.profile-card::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+    height: 33%;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+    background-color: #4070f4;
+}
+.image
+{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #4070f4;
+    padding :px;
+    margin: 10px;
+
+}
+.profile-img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+
+}
+.profile-card .text-data
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-data .name
+{
+    font-size: 22px;
+    font-weight: 530;
+}
+.text-data .job
+{
+    font-size: 15px;
+    font-weight: 500;
+}
+.profile-card .media-botton
+{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.media-botton:hover
+{
+    color: black;
+}
+.media-botton .link
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f4f4f4;
+    font-size: 18px;
+    margin: 0 8px;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    border: 2px solid;
+    background-color: #4070f4;
+    text-decoration: none;
+
+}
+.media-botton .link:hover{
+    color: black;
+}
+.profile-card .buttons
+{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+
+}
+.buttons .button
+{
+    border-radius: 24px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #4070f4;
+    color: #fff;
+    margin: 0 6px;
+    padding: 6px 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.buttons .button:hover
+{
+    background-color: #4070f4;
+    color: rgb(30, 25, 25);
+}
+.profile-card .analytics
+{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+
+}
+.analytics .data
+
+{
+    display: flex;
+    align-items: center;
+    color: rgb(115, 114, 114);
+    padding: 0 20px;
+    border-right: 2px solid #e7e7e7 ;
+}
+.data i
+{
+    font-size: 18px;
+    margin-right: 6px;
+}
+.data:last-child
+{
+    border-right: none;
+}
+
+
+
+
+
