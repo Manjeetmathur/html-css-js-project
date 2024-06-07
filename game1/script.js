@@ -43,16 +43,19 @@ setInterval(() =>{
 
                       
     dx = parseInt(window.getComputedStyle(dino,null).getPropertyValue('left'));
+    // console.log(dx);
     dy = parseInt(window.getComputedStyle(dino,null).getPropertyValue('top'));
-
+   
     ox =parseInt(window.getComputedStyle(obstacle,null).getPropertyValue('left'));
+    // console.log(ox);
     oy =parseInt(window.getComputedStyle(obstacle,null).getPropertyValue('top'));
 
 
     offsetX = Math.abs(dx-ox);
+    // console.log(offsetX);
     offsetY = Math.abs(dy-oy);
 
-    if(offsetX < 93 && offsetY < 52)
+    if(offsetX < 200 && offsetY < 52)
     {
         gameOver.style.visibility= 'visible';
         obstacle.classList.remove('obstacleAni');
@@ -63,7 +66,7 @@ setInterval(() =>{
         },1000);
 
     }
-    else if (offsetX < 145 && cross){
+    else if (offsetX < 200 && cross){
         score += 1;
         updateScore(score);
         cross = false;
