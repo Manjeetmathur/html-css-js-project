@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background: url(bg.jpg);
+    min-height:  100vh;
+    min-width: 100vw;
+    background-size: 100vw 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#scr{
+    position: absolute;
+    top: 9px;
+    right: 30px;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#highscr{
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#board{
+    background: linear-gradient(rgb(131, 254, 164), rgb(50, 156, 105),rgb(211, 211, 137));
+    background-size: cover;
+    width: 90vmin;
+    height: 92vmin;
+    border: 10px double black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+.head{
+    background:linear-gradient(rgb(28, 129, 176),rgb(181, 68, 68));
+    border: 2px solid white;
+    border-radius: 6px;
+    transform: scale(1.2);
+
+}
+.snake{
+    background: linear-gradient(black , green);
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+.food{
+    background: linear-gradient(red , purple);
+    border: .25vmin solid white;
+    border-radius:50%;
+
+}
