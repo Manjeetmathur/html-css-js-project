@@ -6,7 +6,7 @@ const moveSound = new Audio('move.mp3');
 const musicSound = new Audio('music.mp3');
 
 let score=0;
-let speed =8;
+let speed =5;
 let lastPaintTime =0;
 
 let snakeArr =[
@@ -30,16 +30,17 @@ function main(cTime){
 
 function isCollide(sArr)
 {
-    for(let i=1; i< snakeArr.length ;i++){
-        if(snakeArr[i].x === snakeArr[0].x && snakeArr[i].y === snakeArr[0].y  )
-            {
-                return true;
-            }
+    // for(let i=1; i< snakeArr.length ;i++){
+    //     if(snakeArr[i].x === snakeArr[0].x && snakeArr[i].y === snakeArr[0].y  )
+    //         {
+    //             return true;
+    //         }
        
-    }
-    if(snakeArr[0].x >= 18 || snakeArr[0].x <= 0 || snakeArr[0].y >= 18 ||snakeArr[0].y <= 0 ){
-        return true;
-    }
+    // }
+    // if(snakeArr[0].x >= 18 || snakeArr[0].x <= 0 || snakeArr[0].y >= 18 ||snakeArr[0].y <= 0 ){
+    //     return true;
+    // }
+    return false;
 }
 
 function gameEngine()
